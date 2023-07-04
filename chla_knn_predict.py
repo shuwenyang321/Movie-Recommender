@@ -56,3 +56,7 @@ def show_predict_page():
         for movie_title in indices[0]:
             st.subheader(f"Recommend Movies: {df.iloc[movie_title]['Movie Name']}")
 
+import streamlit
+from chla_knn_predict import show_predict_page
+
+show_predict_page()
