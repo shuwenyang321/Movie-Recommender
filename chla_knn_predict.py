@@ -33,7 +33,7 @@ def show_predict_page():
     st.write("Need Information to Recommend Movies")
 
     # select number for each feature - IMDB Rating
-    IMDB_Rating = st.number_input('Input a number for IMDB Rating', min_value=1.0, max_value=10.0, step=0.1)
+    IMDB_Rating = st.number_input('Input a number for IMDB Rating range [1.0 - 10.0]', min_value=1.0, max_value=10.0, step=0.1)
     st.write('You selected the number: ', IMDB_Rating)
 
     # select yes/no for genre 
